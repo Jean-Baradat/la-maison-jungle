@@ -1,6 +1,6 @@
-import { plantList } from '../datas/plantList';
+import { plantList } from './../datas/plantList';
 import './../styles/ShoppingList.css';
-
+import PlantItem from './PlantItem'
 
 export default function ShoppingList() {
 
@@ -10,7 +10,7 @@ export default function ShoppingList() {
             category.push(plant.category);
         }
     });
-    const salesDiv = <div className="lmj-sales">En solde</div>
+
     return (
         <div>
             <ul>
@@ -22,13 +22,15 @@ export default function ShoppingList() {
             </ul>
             <ul className="lmj-plant-list">
                 {plantList.map((plant) => {
-                return (
-                    <li key={plant.name  + '-' + plant.id} className="lmj-plant-item">
-                        { plant.name }
-                        { plant.isBestSale ? <span>🔥</span> : null }{/* ou plant.isBestSale && <span>🔥</span> */}
-                        { plant.isSpecialOffer ? salesDiv : null }
-                    </li>
-                );
+                    return (
+                        <PlantItem 
+                            name = { plant.name }
+                            cover = { plant.cover }
+                            id = { plant.id }
+                            light = { plant.light }
+                            water = { plant.water }
+                        />
+                    );
                 })}
             </ul>
         </div>
