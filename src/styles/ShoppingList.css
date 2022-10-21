@@ -4,15 +4,3 @@
 	display: flex;
 	flex-wrap: wrap;
 }
-
-.lmj-sales {
-	position: absolute;
-	right: 0px;
-	top: 10px;
-	font-weight: 500;
-	color: white;
-	padding: 5px 10px;
-	background-color: #31b572;
-	border-top-left-radius: 10px;
-	border-bottom-left-radius: 10px;
-}

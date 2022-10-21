@@ -11,13 +11,18 @@ export default function CareScale(props) {
     const range = [1, 2, 3];
 
     const scaleType = careType === 'light' ? (
-            <img src={ Sun } alt='sun-icon' /> 
-        ) : (
-            <img src={ Water } alt='water-icon' /> 
-        );
+        <img src={ Sun } alt='sun-icon' /> 
+    ) : (
+        <img src={ Water } alt='water-icon' /> 
+    );
+
+    const scaleValueLabel = ['peu', 'modérement', 'beaucoup'];
+    function alertScale() {
+        alert("Cette plante requiert " + scaleValueLabel[scaleValue-1] + (careType === 'light' ? " de lumière" : " d'arrosage"));
+    }
 
     return (
-        <div>
+        <div onClick={ () => alertScale() }>
             {range.map((rangeElem) => {
                 return (
                     scaleValue >= rangeElem ? <span key={rangeElem.toString()}>{ scaleType }</span> : null
