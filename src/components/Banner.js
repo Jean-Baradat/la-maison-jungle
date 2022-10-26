@@ -1,17 +1,7 @@
-import Header from './Header';
-// import Cart from './Cart';
-import React from 'react';
-import './../styles/Banner.css';
-import logo from './../assets/logo.png';
+import "../styles/Banner.css";
 
-export default function Banner() {
-    return (
-        <React.Fragment>
-            <Header> 
-                <img className="lmj-logo" src={logo} alt="La maison jungle" />
-                <h1 className="lmj-title">La maison jungle</h1>
-            </Header>
-            {/* <Cart /> */}
-        </React.Fragment>
-    );
+function Banner({ children }) {
+    return <div className="lmj-banner">{children}</div>;
 }
+
+export default Banner;

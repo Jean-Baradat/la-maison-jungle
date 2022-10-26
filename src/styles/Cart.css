@@ -1,5 +1,64 @@
-.lmj-cart{
-    padding: 32px;
-    color: #fff;
+.lmj-cart {
+    color: white;
     background-color: #31b572;
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 200px;
+    /* min-width: 5rem; */
+}
+
+.lmj-cart-add-button {
+    margin-left: 32px;
+    cursor: pointer;
+}
+
+.lmj-cart-toggle-button {
+    background: none;
+    outline: none;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+    align-self: self-start;
+    padding: 0;
+    color: white;
+}
+
+.lmj-cart-closed {
+    padding: 32px;
+    width: 200px;
+}
+
+.lmj-cart-closed > button {
+    color: black;
+}
+
+.lmj-btn-reset-cart {
+	display: block;
+	margin-bottom: 1rem;
+	background-color: rgba(255, 255, 255, 0.2);
+	color: white;
+	border-radius: 10px;
+	font-weight: bold;
+	font-size: 0.9em;
+	border: 2px solid rgba(255, 255, 255, 0.8);
+	padding: 5px 0 5px 0;
+	transition: all 0.35s ease;
+}
+
+.lmj-btn-reset-cart:hover{
+	background-color: rgba(255, 255, 255, 0.2);
+	box-shadow: 0px 0px 5px 0.5px rgba(255, 255, 255, 0.8);
+}
+
+.lmj-btn-reset-cart:active{
+	transition: all 0.1s ease;
+	transform: scale(0.95);
+}
+
+@media only screen and (max-width: 768px) {
+    .lmj-cart {
+        width: auto;
+    }
 }

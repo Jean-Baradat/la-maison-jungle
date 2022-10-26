@@ -1,0 +1,10 @@
+.lmj-layout-inner {
+	display: flex;
+	flex-direction: row;
+}
+
+@media only screen and (max-width: 768px) {
+	.lmj-layout-inner {
+		flex-direction: column;
+	}
+}

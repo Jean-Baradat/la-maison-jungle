@@ -1,8 +1,8 @@
-import { useState } from 'react'
-import '../styles/Footer.css'
+import { useState } from "react";
+import "../styles/Footer.css";
 
 function Footer() {
-	const [inputValue, setInputValue] = useState('');
+    const [inputValue, setInputValue] = useState("");
 
     function checkValue(value) {
         setInputValue(value);
@@ -14,22 +14,24 @@ function Footer() {
         }
     }
 
-	return (
-		<footer className='lmj-footer'>
-			<div className='lmj-footer-elem'>
-				Pour les passionné·e·s de plantes 🌿🌱🌵
-			</div>
-			<label for="email" className='lmj-footer-elem'>Laissez-nous votre mail :</label>
-            <input 
-                type="email" 
-                value={inputValue} 
-                placeholder="Entrez votre email" 
-                id="email" 
-                onChange={(e) => checkValue(e.target.value)} 
-                onBlur={testRegExp}
-            />
-		</footer>
-	)
+    return (
+        <footer className="lmj-footer">
+            <div className="lmj-footer-elem">
+                Pour les passionné·e·s de plantes 🌿🌱🌵
+            </div>
+            <label className="lmj-footer-elem">
+                Laissez-nous votre mail :
+                <br />
+                <input
+                    type="text"
+                    value={inputValue}
+                    placeholder="Entrez votre email"
+                    onChange={(e) => checkValue(e.target.value)}
+                    onBlur={testRegExp}
+                />
+            </label>
+        </footer>
+    );
 }
 
-export default Footer
+export default Footer;

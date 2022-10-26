@@ -1,78 +1,96 @@
 import monstera from '../assets/monstera.jpg'
+import lyrata from '../assets/lyrata.jpg'
+import pothos from '../assets/pothos.jpg'
+import succulent from '../assets/succulent.jpg'
+import olivier from '../assets/olivier.jpg'
+import basil from '../assets/basil.jpg'
+import mint from '../assets/mint.jpg'
+import calathea from '../assets/calathea.jpg'
+import cactus from '../assets/cactus.jpg'
 
 export const plantList = [
 	{
 		name: 'monstera',
-		category: 'classique',
+		category: 'Classique',
 		id: '1ed',
-		isBestSale: true,
 		light: 2,
 		water: 3,
-		cover: monstera
+		cover: monstera,
+		price: 5
 	},
 	{
 		name: 'ficus lyrata',
-		category: 'classique',
+		category: 'Classique',
 		id: '2ab',
 		light: 3,
 		water: 1,
-		cover: monstera
+		cover: lyrata,
+		price: 12
 	},
+
 	{
 		name: 'pothos argenté',
-		category: 'classique',
+		category: 'Classique',
 		id: '3sd',
 		light: 1,
 		water: 2,
-		cover: monstera
+		cover: pothos,
+		price: 8
 	},
 	{
-		name: 'yucca',
-		category: 'classique',
+		name: 'calathea',
+		category: 'Classique',
 		id: '4kk',
-		light: 3,
-		water: 1,
-		cover: monstera
+		light: 2,
+		water: 3,
+		cover: calathea,
+		price: 9
 	},
 	{
 		name: 'olivier',
-		category: 'extérieur',
+		category: 'Extérieur',
 		id: '5pl',
 		light: 3,
 		water: 1,
-		cover: monstera
+		cover: olivier,
+		price: 15
 	},
+
 	{
-		name: 'géranium',
-		category: 'extérieur',
-		id: '6uo',
-		light: 2,
-		water: 2,
-		cover: monstera
-	},
-	{
-		name: 'basilique',
-		category: 'extérieur',
-		id: '7ie',
-		isBestSale: true,
-		light: 2,
-		water: 3,
-		cover: monstera
-	},
-	{
-		name: 'aloe',
-		category: 'plante grasse',
+		name: 'cactus',
+		category: 'Plante grasse',
 		id: '8fp',
 		light: 2,
 		water: 1,
-		cover: monstera
+		cover: cactus,
+		price: 7
+	},
+	{
+		name: 'basilique',
+		category: 'Extérieur',
+		id: '7ie',
+		light: 2,
+		water: 3,
+		cover: basil,
+		price: 8
 	},
 	{
 		name: 'succulente',
-		category: 'plante grasse',
+		category: 'Plante grasse',
 		id: '9vn',
 		light: 2,
 		water: 1,
-		cover: monstera
+		cover: succulent,
+		price: 10
+	},
+
+	{
+		name: 'menthe',
+		category: 'Extérieur',
+		id: '6uo',
+		light: 2,
+		water: 2,
+		cover: mint,
+		price: 10
 	}
 ]
